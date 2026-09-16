@@ -1,0 +1,12 @@
+{
+  "name": "chronoscan",
+  "owner": { "name": "ChronoScan", "url": "https://www.chronoscan.org" },
+  "metadata": { "description": "ClaudeMM and other ChronoScan tools for Claude Code" },
+  "plugins": [
+    {
+      "name": "claudemm",
+      "source": "./claudemm",
+      "description": "ClaudeMM: a mind map of your Claude Code sessions, with live hooks, an MCP server to search and tag sessions, and /claudemm:mm."
+    }
+  ]
+}

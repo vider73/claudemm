@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claudemm": {
+      "type": "stdio",
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/ClaudeMM.exe",
+      "args": ["--mcp"]
+    }
+  }
+}
