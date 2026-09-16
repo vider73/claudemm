@@ -66,7 +66,7 @@ To update later:
 claude plugin update claudemm@chronoscan
 ```
 
-An installer with a Start Menu entry is available in the [releases](../../releases) as well; it registers the plugin for you.
+Prefer a classic install with a Start Menu entry? The Windows installer is in [`installer/`](installer/): run it, keep "Register with Claude Code" ticked, and it sets the plugin up for you. ClaudeMM checks for newer versions on start and shows a green button when there is one; it never downloads or installs anything by itself.
 
 ## Privacy
 
