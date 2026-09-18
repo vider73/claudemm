@@ -1,7 +1,7 @@
 {
   "claudemm": {
-    "version": "1.4.1",
-    "url": "https://github.com/vider73/claudemm/raw/main/installer/ClaudeMM-Setup-1.4.1.exe",
-    "notes": "Web servers: every project's dev servers (launch.json, the commands seen in your chats, package.json) with live port state and Open / Start / Stop; chats unfold to show their note, artifacts and files; folder-level Artifacts branch; recency shading; Claude can tag, note and rename the chat it is in (id \"current\", /claudemm:tag); web_servers MCP tool; project picker with Recents."
+    "version": "1.4.2",
+    "url": "https://github.com/vider73/claudemm/raw/main/installer/ClaudeMM-Setup-1.4.2.exe",
+    "notes": "Web servers: every project's dev servers (launch.json, the commands seen in your chats, package.json) with live port state and Open / Start / Stop; chats unfold to show their note, artifacts and files; folder-level Artifacts branch; recency shading; Claude tags the chat it is in on its own (a nudge on the 2nd prompt of an untagged chat; id \"current\", /claudemm:tag); web_servers MCP tool; project picker with Recents."
   }
 }

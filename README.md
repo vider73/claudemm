@@ -50,7 +50,7 @@ This repository is a Claude Code plugin marketplace. Installing the plugin gives
 | | |
 |---|---|
 | **`/claudemm:mm`** | Shows the current chat in the map: clears the search, zooms to it, blinks it for a moment. |
-| **`/claudemm:tag`** | Tags the current chat (`/claudemm:tag Urgent, Fiscal`; with no arguments Claude picks the tags). Claude can also tag, note or rename the chat it is in on its own: every tool accepts `id: "current"`. |
+| **`/claudemm:tag`** | Tags the current chat (`/claudemm:tag Urgent, Fiscal`; with no arguments Claude picks the tags). Claude also tags the chat it is in on its own: an untagged chat gets a one-line reminder on its second prompt, and every tool accepts `id: "current"`. |
 | **MCP tools** | Claude can search and read your session index and organise it: `search_sessions`, `list_sessions`, `get_session`, `list_projects`, `list_tags`, `set_tags`, `rename_session`, `set_note`, `show_in_map`, `open_session`, `rescan`, and `web_servers` (list / start / stop / open the dev servers of your projects, with their live state). Ask *"which sessions did I tag Urgent?"*, *"find the chat about the Postgres migration and open it"* or *"is the frontend dev server up? start it"*. |
 | **Live hooks** | Session start / prompt / stop / notification events reach the map, so running sessions pulse and finished ones settle, without polling. |
 
