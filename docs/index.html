@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaudeMM · download</title>
+<meta name="description" content="ClaudeMM: a mind map of your Claude Code sessions, for Windows. Download the installer or install the Claude Code plugin.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#fafbfc; --fg:#111827; --sub:#6b7280; --card:#ffffff; --line:#e5e7eb; --accent:#2563eb; --accent-fg:#ffffff; --soft:#eff6ff; --code:#f3f4f6; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0f172a; --fg:#e5e7eb; --sub:#9ca3af; --card:#111827; --line:#1f2937; --accent:#60a5fa; --accent-fg:#0b1220; --soft:#172033; --code:#1f2937; } }
+  :root[data-theme="dark"] { --bg:#0f172a; --fg:#e5e7eb; --sub:#9ca3af; --card:#111827; --line:#1f2937; --accent:#60a5fa; --accent-fg:#0b1220; --soft:#172033; --code:#1f2937; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 16px 64px }
+  header { text-align:center; margin-bottom:28px }
+  header img { width:88px; height:88px }
+  h1 { font-size:2.2rem; margin:12px 0 4px }
+  .tag { color:var(--sub); font-size:1.05rem; margin:0 }
+  .cta { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:26px 0 8px }
+  .btn { display:inline-block; padding:14px 22px; border-radius:10px; font-weight:600; text-decoration:none; border:1px solid var(--line); color:var(--fg); background:var(--card) }
+  .btn.primary { background:var(--accent); color:var(--accent-fg); border-color:var(--accent) }
+  .ver { text-align:center; color:var(--sub); font-size:.95rem }
+  .shot { width:100%; border:1px solid var(--line); border-radius:12px; margin:26px 0 }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:18px 0 }
+  h2 { font-size:1.15rem; margin:0 0 10px }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow:auto; font-size:.92rem }
+  code { font-family:Consolas,"Cascadia Mono",monospace }
+  ul { padding-left:20px; margin:8px 0 }
+  li { margin:4px 0 }
+  .note { background:var(--soft); border-radius:8px; padding:10px 14px; font-size:.95rem }
+  footer { text-align:center; color:var(--sub); font-size:.9rem; margin-top:34px }
+  a { color:var(--accent) }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="ClaudeMM icon">
+    <h1>ClaudeMM</h1>
+    <p class="tag">A mind map of your Claude Code sessions, for Windows.<br>Find the chat you had three weeks ago, organise your projects the way you think, and let Claude search it all.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/vider73/claudemm/releases/download/v1.4.2/ClaudeMM-Setup-1.4.2.exe">⬇ Download ClaudeMM 1.4.2 for Windows</a>
+      <a class="btn" href="https://github.com/vider73/claudemm">Source &amp; plugin on GitHub</a>
+    </div>
+    <p class="ver">Windows 10/11 (x64) · installer, about 2 MB · <a href="https://github.com/vider73/claudemm/releases">all releases</a></p>
+  </header>
+
+  <img class="shot" src="detail.png" alt="ClaudeMM: a chat unfolded in the map with its artifacts and files, the inspector showing its web server">
+
+  <section>
+    <h2>Install as a Claude Code plugin (recommended)</h2>
+    <p>Gives every Claude Code session — terminal or desktop app — the <code>/claudemm:mm</code> and <code>/claudemm:tag</code> commands, the MCP tools (search your sessions, tag and note the chat you are in, list and start your dev servers) and the live hooks that make the map pulse.</p>
+<pre><code>claude plugin marketplace add vider73/claudemm
+claude plugin install claudemm@chronoscan</code></pre>
+    <p>Then start the ClaudeMM window from the plugin folder once, or use the installer below to get a Start Menu entry.</p>
+  </section>
+
+  <section>
+    <h2>Or run the Windows installer</h2>
+    <ul>
+      <li>Download <a href="https://github.com/vider73/claudemm/releases/download/v1.4.2/ClaudeMM-Setup-1.4.2.exe">ClaudeMM-Setup-1.4.2.exe</a> and run it. It adds a Start Menu entry and offers to register the plugin with Claude Code.</li>
+      <li>Nothing is uploaded anywhere: ClaudeMM only reads the transcripts Claude Code already keeps on your disk, and writes its own tags, notes and map layout under <code>%APPDATA%\ChronoUI</code>.</li>
+    </ul>
+    <p class="note">The installer is not code-signed yet, so Windows SmartScreen or your browser may hesitate: in the browser choose <em>Keep</em>, and on the blue SmartScreen dialog <em>More info → Run anyway</em>. The file is published from the <a href="https://github.com/vider73/claudemm/releases">GitHub release</a> of the same version.</p>
+  </section>
+
+  <section>
+    <h2>What you get</h2>
+    <ul>
+      <li><strong>The map.</strong> Every working directory a branch, every chat a leaf; your own nodes in between, drag chats into them. Live sessions pulse.</li>
+      <li><strong>Chats that unfold.</strong> Their note, the artifacts they published, the files they wrote; folders carry an Artifacts branch.</li>
+      <li><strong>Your dev servers.</strong> Every project that runs something on a local port: which ports listen right now, Open / Start / Stop.</li>
+      <li><strong>Search, tags and notes</strong> across everything, and Claude tags the chat it is in on its own.</li>
+    </ul>
+  </section>
+
+  <img class="shot" src="overview.png" alt="A project in the map: Files, Servers and Artifacts branches next to its chats">
+
+  <footer>MIT licensed · built on <a href="https://github.com/vider73">ChronoUI</a> · <a href="https://github.com/vider73/claudemm/issues">issues and ideas</a></footer>
+</main>
+</body>
+</html>

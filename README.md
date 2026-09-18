@@ -10,6 +10,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/vider73/claudemm/releases/latest"><img src="https://img.shields.io/github/v/release/vider73/claudemm?label=Download%20for%20Windows&style=for-the-badge" alt="Download the latest release"></a>
+  &nbsp;
+  <a href="https://vider73.github.io/claudemm/"><img src="https://img.shields.io/badge/download%20page-vider73.github.io%2Fclaudemm-blue?style=for-the-badge" alt="Download page"></a>
+</p>
+
+<p align="center">
   <img src="docs/overview.png" alt="The mind map: your working directories as branches, chats as leaves, your own nodes in between">
 </p>
 
