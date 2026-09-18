@@ -9,8 +9,8 @@ pointing at `bin/ClaudeMM.exe` through `${CLAUDE_PLUGIN_ROOT}`:
 | Surface | File | What it does |
 |---|---|---|
 | Hooks | `hooks/hooks.json` | SessionStart / UserPromptSubmit / Stop / Notification / SessionEnd run `ClaudeMM.exe --hook`, which forwards the event to the running window so sessions pulse live in the map. A few milliseconds each; a no-op when the window is closed. |
-| MCP server | `.mcp.json` | `ClaudeMM.exe --mcp` exposes the session index to Claude: `list_sessions`, `search_sessions`, `get_session`, `list_projects`, `list_tags`, `set_tags`, `rename_session`, `set_note`, `show_in_map`, `open_session`, `rescan`. Inside Claude Code the tools are named `mcp__plugin_claudemm_claudemm__<tool>`. |
-| Command | `commands/mm.md` | `/claudemm:mm` shows the current chat in the map. |
+| MCP server | `.mcp.json` | `ClaudeMM.exe --mcp` exposes the session index to Claude: `list_sessions`, `search_sessions`, `get_session`, `list_projects`, `list_tags`, `set_tags`, `rename_session`, `set_note`, `show_in_map`, `open_session`, `rescan`, `web_servers` (the projects' dev servers: list with live state, start, stop, open). Inside Claude Code the tools are named `mcp__plugin_claudemm_claudemm__<tool>`. |
+| Commands | `commands/mm.md`, `commands/tag.md` | `/claudemm:mm` shows the current chat in the map; `/claudemm:tag Urgent, Fiscal` tags it (no arguments = Claude picks the tags). Every tool that takes a session id also accepts `"current"` = the chat the tool is called from, resolved from the hooks' trail in `%APPDATA%\ChronoUI\claudemm_live.tsv`. |
 
 `bin/` is filled by the ClaudeMM build (CMake post-build step copies
 `ClaudeMM.exe` and `ChronoUI.dll` there); it is not checked in.

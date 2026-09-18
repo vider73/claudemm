@@ -1,6 +1,6 @@
 {
   "name": "claudemm",
-  "version": "1.3.0",
+  "version": "1.4.1",
   "description": "ClaudeMM: a mind map of your Claude Code sessions. Adds live session hooks, an MCP server that lets Claude search and tag your past sessions, and the /claudemm:mm command that shows the current chat in the map.",
   "author": {
     "name": "ChronoScan",
