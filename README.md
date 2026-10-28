@@ -49,6 +49,14 @@ Claude Code keeps every conversation on disk, but finding *that one chat where w
   <img src="docs/list-search.png" alt="The list view with a search">
 </p>
 
+## In a terminal
+
+`ClaudeMMConsole` is the same mind map as an outline in a terminal, on Windows and Linux: the folders with their aliases, the manual nodes, moved chats, notes, files, artifacts and web servers, with the keys to search, tag, rename, note, move and continue a chat (`c` runs `claude --resume` in its folder). It edits the same files as the window, so both can be open at once. The installer puts it next to the app and can add that folder to PATH. Keys and details: [docs/CONSOLE.md](docs/CONSOLE.md).
+
+![The console](docs/console/console-tree.png)
+
+ClaudeMM also builds on **Linux** (SDL2, Cairo and Pango through ChronoUI's Linux port): scanner, list, map, inspector and web servers, data under `~/.config/ChronoUI`. See `ClaudeMM/` in the ChronoUI repository.
+
 ## The Claude Code plugin
 
 This repository is a Claude Code plugin marketplace. Installing the plugin gives every Claude Code session, terminal or desktop app, three things:
